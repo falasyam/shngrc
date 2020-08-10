@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+    <v-app>
     <v-layout justify-center>
       <v-app-bar
         color="transparent"
@@ -20,10 +20,10 @@
             ><router-link to="/about"><span class="black--text">About</span></router-link></v-btn>
             <v-btn
               text
-            ><router-link to="/"><span class="black--text"></span></router-link></v-btn>
+            ><router-link to="/work"><span class="black--text">Work</span></router-link></v-btn>
             <v-btn
               text
-            ><router-link to="/"><span class="black--text"></span></router-link></v-btn>
+            ><router-link to="/blog"><span class="black--text">Blog</span></router-link></v-btn>
           </v-toolbar-items>
       </v-app-bar>
       <v-bottom-sheet v-model="sheet" class="atas">
@@ -44,51 +44,29 @@
         </v-list>
       </v-bottom-sheet>
     </v-layout>
-    <v-main>
-      <router-view/>
-    </v-main>
-    <Footer/>
-  </v-app>
+    </v-app>
 </template>
 
 <script>
-
-import Footer from '../src/components/Footer'
-
 export default {
-  name: 'App',
-  title: 'Shania Gracia - Fansite',
-
-  components: {
-    Footer
-  },
-
-  data () {
-      return {
-        sheet: false,
-        items: [
-          { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
-          { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
-          { title: 'WIP', icon: 'mdi-code-tags', link:'/' },
-          { title: 'WIP', icon: 'mdi-blogger', link:'/'  },
-        ],
-        options: {
-          fitToSection: false,
+    name: 'App',
+    components: {
+    
+    },
+    data () {
+        return {
+            sheet: false,
+            items: [
+            { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
+            { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
+            { title: 'Work', icon: 'mdi-code-tags', link:'/work' },
+            { title: 'Blog', icon: 'mdi-blogger', link:'/blog'  },
+            ],
+            options: {
+            fitToSection: false,
+            }
         }
-      }
     },
 };
+
 </script>
-
-<style scoped>
-  a {  
-    text-decoration: none;
-    color: black;
-    background-color: transparent;
-  }
-
-  .atas {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-</style>
