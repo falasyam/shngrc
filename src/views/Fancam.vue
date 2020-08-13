@@ -19,60 +19,60 @@
         </section>
         <section>
             <v-responsive>
-                <v-container fill-height fluid class="pa-4 ma-5">
+                <v-container fill-height fluid class="">
                     <v-row no-gutters align="center" justify="center">
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=F5T7II6zSiE"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=pKDIDPbPrOk"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=Zk7ZdSejuFY"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=udQzXPahvdE"></video-embed>
                         </v-col>
                     </v-row>
                     <v-row no-gutters align="center" justify="center">
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=6LnQpJRzJeI"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=T4J_tAOxBo0"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=LMshGHmzvEU"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=LojVkheThvU"></video-embed>
                         </v-col>
                     </v-row>
                     <v-row no-gutters align="center" justify="center">
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=8SqQlPfVCtI"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=ziAq8-E0kCM"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=sEp9tTcVrg8"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=UNxupW2Psjc"></video-embed>
                         </v-col>
                     </v-row>
                     <v-row no-gutters align="center" justify="center">
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=Mf72iUIYRc8"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=qU0ZiSeaxVs"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=NTjJF75oyHY"></video-embed>
                         </v-col>
-                        <v-col cols="12" md="3" lg="3">
+                        <v-col cols="12" md="3" lg="3" align="center" justify="center">
                             <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=-9x_p9qPVVs"></video-embed>
                         </v-col>
                     </v-row>

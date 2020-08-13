@@ -66,6 +66,7 @@ export default {
         items: [
           { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
           { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
+          { title: 'Fancam', icon: 'mdi-camera', link:'/fancam'  },
         ],
         options: {
           fitToSection: false,

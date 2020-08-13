@@ -5,15 +5,7 @@
             <v-parallax
                 src="https://i.ibb.co/DgzfpQb/sggg.jpg"
             >
-                <v-row
-                align="center"
-                justify="center"
-                >
-                <v-col class="text-center" cols="12">
-                    <h1 class="display-1 font-weight-thin mb-4">Vuetify.js</h1>
-                    <h4 class="subheading">Build your application today!</h4>
-                </v-col>
-                </v-row>
+            
             </v-parallax>
         </v-responsive>
         </div>
@@ -68,41 +60,24 @@
             </v-responsive>
         </div>
         <div class="py-4"></div>
-        <div class="section" id="sosmed">
-            <v-responsive>
-                <v-container fluid class="fill-height">
-                    <h2 class="display-1 pa-3 font-weight-bold" align="center" justify="center">Social Media</h2>
-                    <v-divider></v-divider>
-                    <v-row no-gutters>
-                        <v-col cols="12" class="pa-3 text--center" md="6" lg="6">
-                            <v-card outlined class="md-ma-5 md-pa-5 justify-center">
-                                <Timeline id="S_GraciaJKT48" sourceType="profile" :options="{ tweetLimit: '3' , cards: 'hidden' }"><div class="spinner"></div></Timeline>
-                            </v-card>
-                        </v-col>
-                        <v-col cols="12" class="pa-3 text--center" md="6" lg="6">
-                            <instagram-embed
-                                :url="'https://www.instagram.com/p/CDV3nxphQ_1/'"
-                                :max-width=500
-                            />
-                        </v-col>
-                    </v-row>
-                </v-container>
-            </v-responsive>
-        </div>
+        <section>
+            <v-row>
+                <v-col cols="12" align="center" justify="center">
+                    <v-img src="https://i.ibb.co/dfRKGrD/shngrclttr.png" width="200" height="65"></v-img>
+                </v-col>
+            </v-row>
+        </section>
+        <div class="py-4"></div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 
-import { Timeline } from 'vue-tweet-embed'
-import InstagramEmbed from 'vue-instagram-embed'
 
 export default {
   name: 'Home',
   components: {
-    Timeline,
-    InstagramEmbed,
   }
 }
 </script>
