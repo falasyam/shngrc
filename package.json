@@ -11,7 +11,10 @@
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
+    "vue-insta-slider": "^1.0.0",
+    "vue-instagram-embed": "^1.0.0",
     "vue-router": "^3.2.0",
+    "vue-tweet-embed": "^2.4.0",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {

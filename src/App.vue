@@ -18,12 +18,6 @@
             <v-btn
               text
             ><router-link to="/about"><span class="black--text">About</span></router-link></v-btn>
-            <v-btn
-              text
-            ><router-link to="/"><span class="black--text"></span></router-link></v-btn>
-            <v-btn
-              text
-            ><router-link to="/"><span class="black--text"></span></router-link></v-btn>
           </v-toolbar-items>
       </v-app-bar>
       <v-bottom-sheet v-model="sheet" class="atas">
@@ -69,8 +63,6 @@ export default {
         items: [
           { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
           { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
-          { title: 'WIP', icon: 'mdi-code-tags', link:'/' },
-          { title: 'WIP', icon: 'mdi-blogger', link:'/'  },
         ],
         options: {
           fitToSection: false,

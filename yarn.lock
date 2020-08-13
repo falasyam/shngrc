@@ -1869,6 +1869,14 @@ aws4@^1.8.0:
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha1-oXs6jqgRBg501H0wYSJACtRJeuI=
 
+axios@^0.18.0:
+  version "0.18.1"
+  resolved "https://registry.npm.taobao.org/axios/download/axios-0.18.1.tgz#ff3f0de2e7b5d180e757ad98000f1081b87bcea3"
+  integrity sha1-/z8N4ue10YDnV62YAA8Qgbh7zqM=
+  dependencies:
+    follow-redirects "1.5.10"
+    is-buffer "^2.0.2"
+
 babel-eslint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.npm.taobao.org/babel-eslint/download/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
@@ -3086,6 +3094,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.1.1, debug@^3.2.5:
   version "3.2.6"
   resolved "https://registry.npm.taobao.org/debug/download/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
@@ -4079,6 +4094,13 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.5.10.tgz?cache=0&sync_timestamp=1597060262911&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio=
+  dependencies:
+    debug "=3.1.0"
+
 follow-redirects@^1.0.0:
   version "1.12.1"
   resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
@@ -4460,7 +4482,7 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
 
-highlight.js@^9.6.0:
+highlight.js@^9.13.1, highlight.js@^9.6.0:
   version "9.18.3"
   resolved "https://registry.npm.taobao.org/highlight.js/download/highlight.js-9.18.3.tgz#a1a0a2028d5e3149e2380f8a865ee8516703d634"
   integrity sha1-oaCiAo1eMUniOA+Khl7oUWcD1jQ=
@@ -4879,6 +4901,11 @@ is-buffer@^1.1.5:
   resolved "https://registry.npm.taobao.org/is-buffer/download/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha1-76ouqdqg16suoTqXsritUf776L4=
 
+is-buffer@^2.0.2:
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/is-buffer/download/is-buffer-2.0.4.tgz#3e572f23c8411a5cfd9557c849e3665e0b290623"
+  integrity sha1-PlcvI8hBGlz9lVfISeNmXgspBiM=
+
 is-callable@^1.1.4, is-callable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/is-callable/download/is-callable-1.2.0.tgz#83336560b54a38e35e3a2df7afd0454d691468bb"
@@ -5170,6 +5197,11 @@ jest-worker@^25.4.0:
   dependencies:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
+
+jquery@^3.3.1:
+  version "3.5.1"
+  resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  integrity sha1-17TQjhv9uGrS8aPQOeoXMEcXq7U=
 
 js-message@1.0.5:
   version "1.0.5"
@@ -7698,6 +7730,11 @@ slice-ansi@^2.1.0:
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
 
+slick-carousel@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npm.taobao.org/slick-carousel/download/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+  integrity sha1-pL+ykBSIe7Zs5Si5C9DNomLMj40=
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/snapdragon-node/download/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -8646,10 +8683,34 @@ vue-eslint-parser@^7.0.0:
     esquery "^1.0.1"
     lodash "^4.17.15"
 
+vue-hljs@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npm.taobao.org/vue-hljs/download/vue-hljs-1.1.2.tgz#d6639e30964d1accb316f33b4e3266edc1e6012d"
+  integrity sha1-1mOeMJZNGsyzFvM7TjJm7cHmAS0=
+  dependencies:
+    highlight.js "^9.13.1"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha1-UylVzB6yCKPZkLOp+acFdGV+CPI=
+
+vue-insta-slider@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/vue-insta-slider/download/vue-insta-slider-1.0.0.tgz#c458ab9f56fccf6e07cb1d81c34be615180d240b"
+  integrity sha1-xFirn1b8z24Hyx2Bw0vmFRgNJAs=
+  dependencies:
+    axios "^0.18.0"
+    jquery "^3.3.1"
+    slick-carousel "^1.8.1"
+    vue "^2.5.16"
+
+vue-instagram-embed@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/vue-instagram-embed/download/vue-instagram-embed-1.0.0.tgz#d32d3b1fbd4738eeeab6b7a6a80c6d29a1ba24c5"
+  integrity sha1-0y07H71HOO7qtremqAxtKaG6JMU=
+  dependencies:
+    vue-hljs "^1.1.2"
 
 "vue-loader-v16@npm:vue-loader@^16.0.0-beta.3":
   version "16.0.0-beta.4"
@@ -8700,7 +8761,12 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.11:
+vue-tweet-embed@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/vue-tweet-embed/download/vue-tweet-embed-2.4.0.tgz#8707efd49b519fd2201200ea1ba68881c35d886d"
+  integrity sha1-hwfv1JtRn9IgEgDqG6aIgcNdiG0=
+
+vue@^2.5.16, vue@^2.6.11:
   version "2.6.11"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz?cache=0&sync_timestamp=1595984098844&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=

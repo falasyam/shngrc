@@ -14,6 +14,7 @@ Vue.use(VueRouter)
   {
     path: '/about',
     name: 'About',
+    meta: {title: 'Shania Gracia - About'},
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
