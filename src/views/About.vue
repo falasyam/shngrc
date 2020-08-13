@@ -34,6 +34,12 @@
                 <span class="display-2 text-center">Sekali Lagi, Gracia!</span>
                 <div class="py-3"></div>
               </v-col>
+              <v-col cols="12" justify="center" align="center">
+                <v-btn icon href="https://www.youtube.com/channel/UCsf_Iko0T78cOk8ayVZc5ZA"> <v-icon>mdi-youtube</v-icon></v-btn>
+                <v-btn icon href="https://instagram.com/jkt48gracia"> <v-icon>mdi-instagram</v-icon></v-btn>
+                <v-btn icon href="https://twitter.com/S_GraciaJKT48"> <v-icon>mdi-twitter</v-icon></v-btn>
+                <v-btn icon href="https://tiktok.com/@graciajkt48"> <v-icon>mdi-music</v-icon></v-btn>
+              </v-col>
             </v-row>
           </v-container>
         </v-responsive>
@@ -90,6 +96,13 @@
               </v-row>
             </v-container>
         </v-responsive>
+      </section>
+      <section>
+        <v-row>
+          <v-col cols="12" align="center" justify="center">
+            <v-img src="https://i.ibb.co/dfRKGrD/shngrclttr.png" width="200" height="65"></v-img>
+          </v-col>
+        </v-row>
       </section>
     </v-container>
   </v-layout>

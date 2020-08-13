@@ -4,8 +4,11 @@ import './registerServiceWorker'
 import router from './router'
 import vuetify from './plugins/vuetify';
 import { Tweet, Moment, Timeline } from 'vue-tweet-embed';
+import Embed from 'v-video-embed';
 
 Vue.config.productionTip = false
+
+Vue.use(Embed),
 
 new Vue({
   router,
@@ -13,5 +16,6 @@ new Vue({
   Tweet,
   Moment,
   Timeline,
+  Embed,
   render: h => h(App)
 }).$mount('#app')

@@ -18,6 +18,9 @@
             <v-btn
               text
             ><router-link to="/about"><span class="black--text">About</span></router-link></v-btn>
+            <v-btn
+              text
+            ><router-link to="/fancam"><span class="black--text">Fancam</span></router-link></v-btn>
           </v-toolbar-items>
       </v-app-bar>
       <v-bottom-sheet v-model="sheet" class="atas">

@@ -8625,6 +8625,13 @@ uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
 
+v-video-embed@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npm.taobao.org/v-video-embed/download/v-video-embed-1.0.7.tgz#ddef5dbc92fe5ae421898d1bd226a07c35b27cbc"
+  integrity sha1-3e9dvJL+WuQhiY0b0iagfDWyfLw=
+  dependencies:
+    vue "^2.6.10"
+
 v8-compile-cache@^2.0.3:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/v8-compile-cache/download/v8-compile-cache-2.1.1.tgz#54bc3cdd43317bca91e35dcaf305b1a7237de745"
@@ -8766,7 +8773,7 @@ vue-tweet-embed@^2.4.0:
   resolved "https://registry.npm.taobao.org/vue-tweet-embed/download/vue-tweet-embed-2.4.0.tgz#8707efd49b519fd2201200ea1ba68881c35d886d"
   integrity sha1-hwfv1JtRn9IgEgDqG6aIgcNdiG0=
 
-vue@^2.5.16, vue@^2.6.11:
+vue@^2.5.16, vue@^2.6.10, vue@^2.6.11:
   version "2.6.11"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz?cache=0&sync_timestamp=1595984098844&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=

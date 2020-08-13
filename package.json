@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
+    "v-video-embed": "^1.0.7",
     "vue": "^2.6.11",
     "vue-insta-slider": "^1.0.0",
     "vue-instagram-embed": "^1.0.0",

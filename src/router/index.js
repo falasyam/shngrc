@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Fancam from '../views/Fancam.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +17,13 @@ Vue.use(VueRouter)
     name: 'About',
     meta: {title: 'Shania Gracia - About'},
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  {
+    path: '/fancam',
+    name: 'Fancam',
+    component: Fancam,
+    meta: {title: 'Shania Gracia - Fancam'}
+  },
 ]
 
 const router = new VueRouter({
