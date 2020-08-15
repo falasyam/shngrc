@@ -5321,6 +5321,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+jsz-vue-gallery@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/jsz-vue-gallery/download/jsz-vue-gallery-0.1.2.tgz#fd787fa775b92ceece8dea3644ded1e7843340ea"
+  integrity sha1-/Xh/p3W5LO7Ojeo2RN7R54QzQOo=
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/killable/download/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"

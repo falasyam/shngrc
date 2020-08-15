@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Fancam from '../views/Fancam.vue'
+import Video from '../views/Video.vue'
+import Photo from '../views/Photo.vue'
 
 Vue.use(VueRouter)
 
@@ -19,11 +20,17 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/fancam',
-    name: 'Fancam',
-    component: Fancam,
-    meta: {title: 'Shania Gracia - Fancam'}
+    path: '/video',
+    name: 'Video',
+    component: Video,
+    meta: {title: 'Shania Gracia - Video'}
   },
+  {
+    path: '/photo',
+    name: 'Photo',
+    component: Photo,
+    meta: {title: 'Shania Gracia - Photo'}
+  }
 ]
 
 const router = new VueRouter({

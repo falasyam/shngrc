@@ -20,7 +20,10 @@
             ><router-link to="/about"><span class="black--text">About</span></router-link></v-btn>
             <v-btn
               text
-            ><router-link to="/fancam"><span class="black--text">Fancam</span></router-link></v-btn>
+            ><router-link to="/video"><span class="black--text">Video</span></router-link></v-btn>
+            <v-btn text>
+              <router-link to="/photo"><span class="black--text">Photo</span></router-link>
+            </v-btn>
           </v-toolbar-items>
       </v-app-bar>
       <v-bottom-sheet v-model="sheet" class="atas">
@@ -66,7 +69,8 @@ export default {
         items: [
           { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
           { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
-          { title: 'Fancam', icon: 'mdi-camera', link:'/fancam'  },
+          { title: 'Video', icon: 'mdi-video-outline', link:'/video'  },
+          { title: 'Photo', icon: 'mdi-image-outline', link:'/photo'}
         ],
         options: {
           fitToSection: false,

@@ -83,23 +83,18 @@
             <v-divider></v-divider>
               <v-row no-gutters>
                 <v-col cols="12" md="6" lg="6" align="center" justify="center">
-                  <v-card outlined class="md-ma-5 md-pa-5 justify-center">
+                  <v-card outlined class="justify-center">
                     <Timeline id="S_GraciaJKT48" sourceType="profile" :options="{ tweetLimit: '3' , cards: 'hidden' }"><div class="spinner"></div></Timeline>
                   </v-card>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" align="center" justify="center">
                   <instagram-embed
-                    :url="'https://www.instagram.com/p/CDV3nxphQ_1/'"
-                    :max-width=500
+                    :url="'https://www.instagram.com/p/CD0vDFhBO69/'"
+                    :max-width=400
+                    :hide-caption=true
                   />
                 </v-col>
                 <div class="py-3"></div>
-                <v-col cols="12" md="6" lg="6" align="center" justify="center">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bgNxKv39ZqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </v-col>
-                <v-col cols="12" md="6" lg="6" align="center" justify="center">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/-lXam7uGX-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </v-col>
               </v-row>
             </v-container>
         </v-responsive>
