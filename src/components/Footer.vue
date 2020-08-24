@@ -1,6 +1,5 @@
 <template>
     <v-footer
-        color="#9a12b3"
         padless
         elevation="1"
         outlined
@@ -9,7 +8,7 @@
                 cols="6"
                 class="left"
             >
-                <span class="white--text"> © {{ new Date().getFullYear() }} — SHNGRC Firm </span>
+                <span class="black--text"> © {{ new Date().getFullYear() }} — SHNGRC</span>
             </v-col>
             <v-col cols="6" class="text-right">
                 <span> </span>

@@ -26,21 +26,13 @@
                             <h1 class="display-1 font-weight-bold" align="center" justify="center">Sosial Media</h1>
                             <span class="description">Dari Instagram dan Twitter Shania Gracia</span>
                             <jsz-vue-gallery v-bind:jsz-gallery="sosmed"></jsz-vue-gallery>
-                            <v-btn outlined><span class="font-weight-bold"><a href="https://instagram.com/jkt48gracia" class="black--text">Instagram</a></span></v-btn>
+                            <v-btn outlined><span class="font-weight-bold text--left"><a href="https://instagram.com/jkt48gracia" class="black--text">Instagram</a></span></v-btn>
+                            <v-btn text small disabled></v-btn>
                             <v-btn outlined><span class="font-weight-bold"><a href="https://twitter.com/S_GraciaJKT48/media" class="black--text">Twitter</a></span></v-btn>
                             <div class="py-4"></div>
                         </v-col>
                     </v-row>
                     <v-divider></v-divider>
-                    <v-row no-gutters>
-                        <v-col cols="12" sm="12" align="center" justify="center">
-                            <h1 class="display-1 font-weight-bold" align="center" justify="center">FanPict</h1>
-                            <span class="description">Dari jepretan fans</span>
-                            <div class="py-1"></div>
-                            <span class="display-1">Coming Soon</span>
-                            <div class="py-4"></div>
-                        </v-col>
-                    </v-row>
                 </v-container>
             </v-responsive>
         </section>

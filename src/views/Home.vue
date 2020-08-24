@@ -20,9 +20,10 @@
                                 “Senyumku terekam jelas dalam ingatanmu seperti foto dengan sejuta warna. 
                                 Namaku Gracia. Always Smile.”
                             </span>
+                            <div class="py-2"></div>
+                            <v-btn outlined class="">
+                            <router-link to="/about"><span class="black--text">Tentang Gracia</span></router-link></v-btn>
                         </v-col>
-                        <v-btn outlined class="pa-3 ma-3">
-                        <router-link to="/about"><span class="black--text">Tentang Gracia</span></router-link></v-btn>
                     </v-row>
                 </v-container>
             </v-responsive>
