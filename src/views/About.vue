@@ -89,7 +89,7 @@
                 </v-col>
                 <v-col cols="12" md="6" lg="6" align="center" justify="center">
                   <instagram-embed
-                    :url="'https://www.instagram.com/p/CD0vDFhBO69/'"
+                    :url="'https://www.instagram.com/p/CEMSRDQhhpF/'"
                     :max-width=400
                     :hide-caption=true
                   />

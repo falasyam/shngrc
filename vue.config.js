@@ -4,6 +4,7 @@ module.exports = {
   ],
 
   pwa: {
-    name: 'Shania Gracia - Fansite'
+    name: 'Shania Gracia - Fansite',
+    themeColor: '#BD10E0'
   }
 }
