@@ -7,6 +7,7 @@ Made with ❤️
 ## To Do
 
 - [ ] From Fans Page
+    - FanArt, FanPict
 - [ ] Fanbase Page
 - [ ] Blog Page
 
