@@ -11,7 +11,6 @@
                 >
                 <v-col class="text-center" cols="12">
                     <h1 class="display-1 font-weight-thin mb-4">Shania Gracia - Photo</h1>
-                    <h4 class="subheading">Kumpulan Foto/FanArt Shania Gracia</h4>
                 </v-col>
                 </v-row>
             </v-parallax>
@@ -51,6 +50,21 @@ export default {
     data() {
         return {
             sosmed: {
+                "29082020-1": {
+                    "imageSrc": 'https://i.ibb.co/n7nZRDJ/29082020-1.jpg'
+                },
+                "29082020-2": {
+                    "imageSrc": 'https://i.ibb.co/0XmCTFx/29082020-2.jpg'
+                },
+                "29082020-3": {
+                    "imageSrc": 'https://i.ibb.co/86J5258/29082020-3.jpg'
+                },
+                "26082020-1": {
+                    "imageSrc": 'https://i.ibb.co/yfnggvL/26082020-1.jpg'
+                },
+                "26082020-2": {
+                    "imageSrc": 'https://i.ibb.co/6H29pKs/26082020-2.jpg'
+                },
                 "img": {
                     "imageSrc": 'https://i.ibb.co/WnG3KXj/Any-Conv-com-sgn.jpg',
                 },

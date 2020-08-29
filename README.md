@@ -1,4 +1,14 @@
-# shngrc
+# Shania Gracia Fansite Project
+
+Made with ❤️
+
+![Screenshoot](https://i.ibb.co/7gFw1wt/screenshot.png)
+
+## To Do
+
+- [ ] From Fans Page
+- [ ] Fanbase Page
+- [ ] Blog Page
 
 ## Project setup
 ```
