@@ -28,7 +28,7 @@
       </v-app-bar>
       <v-bottom-sheet v-model="sheet" class="atas">
         <v-list class="atas">
-          <v-btn :style="{left: '50%', transform:'translateX(-50%)'}" width="1px" height="3px" color="#d1d1cf"></v-btn>
+          <v-btn depressed :style="{left: '50%', transform:'translateX(-50%)'}" width="1px" height="3px" color="#d1d1cf"></v-btn>
           <v-list-item
             v-for="item in items"
             :key="item.title"
