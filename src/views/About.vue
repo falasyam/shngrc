@@ -31,14 +31,14 @@
                   Selain suka warna ungu, Gracia juga suka fotografi.
                 </span>
                 <div class="py-3"></div>
-                <span class="display-2 text-center">Sekali Lagi, Gracia!</span>
+                <span class="display-2 text-center purple--text">Sekali Lagi, Gracia!</span>
                 <div class="py-3"></div>
               </v-col>
               <v-col cols="12" justify="center" align="center">
-                <v-btn icon href="https://www.youtube.com/channel/UCsf_Iko0T78cOk8ayVZc5ZA"> <v-icon>mdi-youtube</v-icon></v-btn>
-                <v-btn icon href="https://instagram.com/jkt48gracia"> <v-icon>mdi-instagram</v-icon></v-btn>
-                <v-btn icon href="https://twitter.com/S_GraciaJKT48"> <v-icon>mdi-twitter</v-icon></v-btn>
-                <v-btn icon href="https://tiktok.com/@graciajkt48"> <v-icon>mdi-music</v-icon></v-btn>
+                <v-btn icon color="#8e44ad" href="https://www.youtube.com/channel/UCsf_Iko0T78cOk8ayVZc5ZA"> <v-icon>mdi-youtube</v-icon></v-btn>
+                <v-btn icon color="#8e44ad" href="https://instagram.com/jkt48gracia"> <v-icon>mdi-instagram</v-icon></v-btn>
+                <v-btn icon color="#8e44ad" href="https://twitter.com/S_GraciaJKT48"> <v-icon>mdi-twitter</v-icon></v-btn>
+                <v-btn icon color="#8e44ad" href="https://tiktok.com/@graciajkt48"> <v-icon>mdi-music</v-icon></v-btn>
               </v-col>
             </v-row>
           </v-container>
@@ -89,7 +89,7 @@
                 </v-col>
                 <v-col cols="12" md="6" lg="6" align="center" justify="center">
                   <instagram-embed
-                    :url="'https://www.instagram.com/p/CEWIpulBF4X/'"
+                    :url="'https://www.instagram.com/p/CEjiGplBtaR/'"
                     :max-width=400
                     :hide-caption=true
                   />

@@ -27,6 +27,8 @@
                             <jsz-vue-gallery v-bind:jsz-gallery="sosmed"></jsz-vue-gallery>
                             <v-btn outlined><span class="font-weight-bold text--left"><a href="https://instagram.com/jkt48gracia" class="black--text">Instagram</a></span></v-btn>
                             <v-btn text small disabled></v-btn>
+                            <v-btn outlined><span class="font-weight-bold text--left"><a href="https://drive.google.com/drive/folders/1Fap8T4DlFTMvzb_VwEpw1k4jMylUbmkB" class="black--text">Arsip</a></span></v-btn>
+                            <v-btn text small disabled></v-btn>
                             <v-btn outlined><span class="font-weight-bold"><a href="https://twitter.com/S_GraciaJKT48/media" class="black--text">Twitter</a></span></v-btn>
                             <div class="py-4"></div>
                         </v-col>
@@ -50,6 +52,48 @@ export default {
     data() {
         return {
             sosmed: {
+                "02092020-1": {
+                    "imageSrc": 'https://i.ibb.co/pJLNxDW/Eg4-Mhqq-Vg-AEWv-Ke.jpg'
+                },
+                "01092020-2": {
+                    "imageSrc": 'https://i.ibb.co/xm2Pnf2/059b4bfb-82ab-4193-a736-edc7fbb2b7ce.jpg'
+                },
+                "01092020-1": {
+                    "imageSrc": 'https://i.ibb.co/x3p81bw/a7f26230-b271-4101-aaf5-98748446ad83.jpg'
+                },
+                "GreShan-UltahGre": {
+                    "imageSrc": 'https://i.ibb.co/v3Hz9fn/20200901-220242.jpg'
+                },
+                "31082020-9": {
+                    "imageSrc": 'https://i.ibb.co/XXdyCys/118594265-342952323555999-2171649953707124938-n.jpg'
+                },
+                "31082020-8": {
+                    "imageSrc": 'https://i.ibb.co/MnQwvsd/118550635-317906822654879-4930768673656310498-n.jpg'
+                },
+                "31082020-7": {
+                    "imageSrc": 'https://i.ibb.co/DYtX4yD/118513805-359126521782061-4291672927121912403-n.jpg'
+                },
+                "31082020-6": {
+                    "imageSrc": 'https://i.ibb.co/WPMmNZL/118471135-801049450699627-7568234312770416876-n.jpg'
+                },
+                "31082020-5": {
+                    "imageSrc": 'https://i.ibb.co/2ZCqj5Q/118460050-744504559428652-2430282399959472682-n.jpg'
+                },
+                "31082020-4": {
+                    "imageSrc": 'https://i.ibb.co/C6H4mb5/20200901-220247.jpg'
+                },
+                "31082020-3": {
+                    "imageSrc": 'https://i.ibb.co/8c4vqKR/20200901-220249.jpg'
+                },
+                "31082020-2": {
+                    "imageSrc": 'https://i.ibb.co/rpYJN34/20200901-220251.jpg'
+                },
+                "31082020-1": {
+                    "imageSrc": 'https://i.ibb.co/wJckFv3/20200901-220253.jpg'
+                },
+                "GreShan": {
+                    "imageSrc": 'https://i.ibb.co/v3Hz9fn/20200901-220242.jpg'
+                },
                 "29082020-1": {
                     "imageSrc": 'https://i.ibb.co/n7nZRDJ/29082020-1.jpg'
                 },
