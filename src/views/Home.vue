@@ -1,5 +1,6 @@
 <template>
   <div class="section" id="home">
+      <AppBar/>
         <div class="section" id="description" justify="center">
         <v-responsive>
             <v-parallax
@@ -75,10 +76,12 @@
 <script>
 // @ is an alias to /src
 
+import AppBar from '../components/AppBar'
 
 export default {
   name: 'Home',
   components: {
+      AppBar,
   }
 }
 </script>

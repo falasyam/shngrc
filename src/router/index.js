@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Video from '../views/Video.vue'
 import Photo from '../views/Photo.vue'
+import Fanbase from '../views/Fanbase.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,12 @@ Vue.use(VueRouter)
     name: 'Photo',
     component: Photo,
     meta: {title: 'Shania Gracia - Photo'}
+  },
+  {
+    path: '/fanbase',
+    name: 'Fanbase',
+    component: Fanbase,
+    meta: {title: 'Gracias - Shania Gracia Fanbase'}
   }
 ]
 

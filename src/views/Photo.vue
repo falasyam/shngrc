@@ -1,5 +1,6 @@
 <template>
     <section>
+        <AppBar/>
         <section>
             <v-responsive>
                 <v-parallax
@@ -25,11 +26,9 @@
                             <h1 class="display-1 font-weight-bold" align="center" justify="center">Sosial Media</h1>
                             <span class="description">Dari Instagram dan Twitter Shania Gracia</span>
                             <jsz-vue-gallery v-bind:jsz-gallery="sosmed"></jsz-vue-gallery>
-                            <v-btn outlined><span class="font-weight-bold text--left"><a href="https://instagram.com/jkt48gracia" class="black--text">Instagram</a></span></v-btn>
-                            <v-btn text small disabled></v-btn>
-                            <v-btn outlined><span class="font-weight-bold text--left"><a href="https://drive.google.com/drive/folders/1Fap8T4DlFTMvzb_VwEpw1k4jMylUbmkB" class="black--text">Arsip</a></span></v-btn>
-                            <v-btn text small disabled></v-btn>
-                            <v-btn outlined><span class="font-weight-bold"><a href="https://twitter.com/S_GraciaJKT48/media" class="black--text">Twitter</a></span></v-btn>
+                            <v-btn icon color="#8e44ad" href="https://instagram.com/jkt48gracia"> <v-icon>mdi-instagram</v-icon></v-btn>
+                            <v-btn icon color="#8e44ad" href="https://drive.google.com/drive/folders/1Fap8T4DlFTMvzb_VwEpw1k4jMylUbmkB"> <v-icon>mdi-package-down</v-icon></v-btn>
+                            <v-btn icon color="#8e44ad" href="https://twitter.com/S_GraciaJKT48"> <v-icon>mdi-twitter</v-icon></v-btn>
                             <div class="py-4"></div>
                         </v-col>
                     </v-row>
@@ -42,16 +41,24 @@
 
 <script>
 
+import AppBar from '../components/AppBar'
 import JszVueGallery from 'jsz-vue-gallery'
 
 export default {
     components: {
+        AppBar,
         JszVueGallery,
     },
 
     data() {
         return {
             sosmed: {
+                "05092020-2": {
+                    "imageSrc": 'https://i.ibb.co/DY9HGws/05092020-2.jpg'
+                },
+                "05092020-1": {
+                    "imageSrc": 'https://i.ibb.co/WnmmHr1/05092020-1.jpg'
+                },
                 "02092020-1": {
                     "imageSrc": 'https://i.ibb.co/pJLNxDW/Eg4-Mhqq-Vg-AEWv-Ke.jpg'
                 },

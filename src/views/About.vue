@@ -3,6 +3,7 @@
     <v-container>
       <section>
         <v-responsive>
+          <AppBar/>
           <v-container fill-height>
             <v-row no-gutters>
               <v-col cols="12" md="12" lg="12" xs="12" sm="12" justify="center" align="center" class="">
@@ -114,9 +115,11 @@
 
 import { Timeline } from 'vue-tweet-embed'
 import InstagramEmbed from 'vue-instagram-embed'
+import AppBar from '../components/AppBar'
 
   export default {
     components: {
+      AppBar,
       Timeline,
       InstagramEmbed,
     },
