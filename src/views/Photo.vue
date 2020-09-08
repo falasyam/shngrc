@@ -53,6 +53,12 @@ export default {
     data() {
         return {
             sosmed: {
+                "07092020-2": {
+                    "imageSrc": 'https://i.ibb.co/VYp4xbs/118767273-1141142982953114-7189438732960726968-n.jpg'
+                },
+                "07092020-1": {
+                    "imageSrc": 'https://i.ibb.co/RvbPzCw/118825546-696235700964466-8946964076335085688-n.jpg'
+                },
                 "05092020-2": {
                     "imageSrc": 'https://i.ibb.co/DY9HGws/05092020-2.jpg'
                 },

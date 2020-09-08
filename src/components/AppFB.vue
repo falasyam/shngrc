@@ -5,7 +5,7 @@
         app
         flat
       >
-        <v-btn icon color="#8e44ad"><router-link to="/"><v-icon color="#8e44ad">mdi-arrow-left</v-icon></router-link></v-btn>
+        <v-btn icon color="#8e44ad" href="https://www.shaniagracia.my.id"><v-icon color="#8e44ad">mdi-arrow-left</v-icon></v-btn>
         <div class="pa-1"></div>
         <div
             :class="{'display-5 font-weight-medium': $vuetify.breakpoint.smAndUp,'title font-weight-medium': $vuetify.breakpoint.smAndDown, }"
