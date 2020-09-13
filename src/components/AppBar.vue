@@ -59,7 +59,8 @@ export default {
           { title: 'Home', icon: 'mdi-home-variant-outline', link:'/' },
           { title: 'About', icon: 'mdi-account-outline', link:'/about'  },
           { title: 'Video', icon: 'mdi-video-outline', link:'/video'  },
-          { title: 'Photo', icon: 'mdi-image-outline', link:'/photo'}
+          { title: 'Photo', icon: 'mdi-image-outline', link:'/photo'},
+          { title: 'Fanbase', icon: 'mdi-account-group-outline', link:'/fanbase'}
         ],
         options: {
           fitToSection: false,
