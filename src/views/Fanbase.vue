@@ -20,7 +20,10 @@
                 <span class="display-1 font-weight-bold">About Gracias</span>
                 <div class="py-2"></div>
               </v-col>
-              <v-col cols="12" md="12" lg="12" xs="12" sm="12" class="text-sm-left text-md-center text-lg-center">
+              <v-col cols="12" align="center" justify="center">
+                <v-img src="https://i.ibb.co/jfWttcM/GRACIAS.png" alt="Gracias Logo" height="200px" width="200px"></v-img>
+              </v-col>
+              <v-col cols="12" md="12" lg="12" xs="12" sm="12" class="text-sm-center text-md-center text-lg-center">
                 <span class="pa-6 font-weight-medium">
                   Gracias pertama kali di bentuk 27 Februari 2014. 
                   Gracias diambil dari bahasa Spanyol yang berarti "Terima Kasih". 
@@ -32,7 +35,7 @@
                 </span>
                 <div class="py-2"></div>
               </v-col>
-              <v-col cols="12" class="text-sm-left text-md-center">
+              <v-col cols="12" class="text-sm-center text-md-center" align="center" justify="center">
                 <v-btn rounded color="#8e44ad" dark href="https://docs.google.com/forms/d/1BF-bxkR7xkbH2M5rEKvbPOX0rlQ2-PSyyoFM3fGj5X4/viewform">JOIN US</v-btn>
                 <div class="py-4"></div>
               </v-col>
@@ -43,45 +46,11 @@
           <v-row no-gutters>
             <v-col cols="12" class="text-sm-center text-md-center text-lg-center pa-3">
                 <div class="py-3"></div>
-                <span class="display-1 font-weight-bold">Latest News</span>
+                <span class="display-1 font-weight-bold">Latest Tweet</span>
                 <div class="py-2"></div>
             </v-col>
             <v-col>
-              <v-card
-                class="mx-auto"
-                color="#8e44ad"
-                dark
-                max-width="400"
-              >
-                <v-card-title>
-                  <v-icon
-                    normal
-                    left
-                  >
-                    mdi-alert-circle-outline
-                  </v-icon>
-                  <span class="title font-weight-light">Info</span>
-                </v-card-title>
-
-                <v-card-text class="headline font-weight-bold">
-                  This feature still WIP.
-                </v-card-text>
-
-                <v-card-actions>
-                  <v-list-item class="grow">
-                    <v-list-item-avatar color="grey darken-3">
-                      <v-img
-                        class="elevation-6"
-                        src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
-                      ></v-img>
-                    </v-list-item-avatar>
-
-                    <v-list-item-content>
-                      <v-list-item-title>Developer</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card-actions>
-              </v-card>
+              <Timeline id="GraciasFans_INA" sourceType="profile" :options="{ tweetLimit: '3' , cards: 'hidden' }"><div class="spinner"></div></Timeline>
               <div class="py-6"></div>
             </v-col>
           </v-row>
@@ -167,10 +136,12 @@
 <script>
 
 import AppFB from '../components/AppFB'
+import { Timeline } from 'vue-tweet-embed'
 
   export default {
     components: {
         AppFB,
+        Timeline,
     },
     data () {
       return {
@@ -198,3 +169,21 @@ import AppFB from '../components/AppFB'
     },
   }
 </script>
+
+<style scoped>
+  .gambar {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; /* IE 6-9 */
+  }
+
+  .gambar:hover {
+   -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+  }
+</style>

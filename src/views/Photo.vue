@@ -53,6 +53,39 @@ export default {
     data() {
         return {
             sosmed: {
+                "13092020-5": {
+                    "imageSrc": 'https://i.ibb.co/CsbSQjq/13092020.jpg'
+                },
+                "13092020-4": {
+                    "imageSrc": 'https://i.ibb.co/X3VTxTm/IMG-20200913-130253-647.jpg'
+                },
+                "13092020-3": {
+                    "imageSrc": 'https://i.ibb.co/Yj04xmz/IMG-20200913-130247-906.jpg'
+                },
+                "13092020-2": {
+                    "imageSrc": 'https://i.ibb.co/zhVXqBq/IMG-20200913-130245-344.jpg'
+                },
+                "13092020-1": {
+                    "imageSrc": 'https://i.ibb.co/f4RVzGh/IMG-20200913-130246-508.jpg'
+                },
+                "futari-1": {
+                    "imageSrc": 'https://i.ibb.co/Qv2dKqy/kinjiraretafutari2.jpg'
+                },
+                "futari": {
+                    "imageSrc": 'https://i.ibb.co/d7kB4Fk/kinjiraretafutari.jpg'
+                },
+                "Gremerah-3": {
+                    "imageSrc": 'https://i.ibb.co/W0n8908/IMG-20200913-072820-838.jpg'
+                },
+                "Gremerah-2": {
+                    "imageSrc": 'https://i.ibb.co/WG0z4Y5/IMG-20200913-072825-460.jpg'
+                },
+                "Gremerah-1": {
+                    "imageSrc": 'https://i.ibb.co/SxVdVNJ/IMG-20200913-072823-932.jpg'
+                },
+                "13092020-0": {
+                    "imageSrc": 'https://i.ibb.co/6spCSPV/20200913-072039.jpg'
+                },
                 "07092020-2": {
                     "imageSrc": 'https://i.ibb.co/VYp4xbs/118767273-1141142982953114-7189438732960726968-n.jpg'
                 },

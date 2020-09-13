@@ -23,6 +23,9 @@
             <v-btn text>
               <router-link to="/photo"><span class="purple--text">Photo</span></router-link>
             </v-btn>
+            <v-btn text>
+              <router-link to="/fanbase"><span class="purple--text">Fanbase</span></router-link>
+            </v-btn>
           </v-toolbar-items>
       </v-app-bar>
       <v-bottom-sheet v-model="sheet" class="atas">
