@@ -8,8 +8,10 @@ Made with ❤️
 
 - [ ] From Fans Page
     - FanArt, FanPict
-- [ ] Fanbase Page
-- [ ] Blog Page
+- [x] Fanbase Page
+- [x] Blog Page
+
+[Donate For Renew Doamin/Change Domain to Global](https://saweria.co/shngrc)
 
 ## Project setup
 ```
