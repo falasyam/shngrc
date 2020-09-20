@@ -1,6 +1,7 @@
 # Shania Gracia Fansite Project
 
 Made with ❤️
+[Donate For Renew Doamin/Change Domain to Global](https://saweria.co/shngrc)
 
 ![Screenshoot](https://i.ibb.co/7gFw1wt/screenshot.png)
 
@@ -8,10 +9,10 @@ Made with ❤️
 
 - [ ] From Fans Page
     - FanArt, FanPict
-- [x] Fanbase Page
-- [x] Blog Page
+- [x] Fanbase Page, Blog Page
+    - See [Gracias](https://github.com/falasyam/Gracias)
 
-[Donate For Renew Doamin/Change Domain to Global](https://saweria.co/shngrc)
+
 
 ## Project setup
 ```
