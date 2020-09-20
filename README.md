@@ -1,6 +1,6 @@
 # Shania Gracia Fansite Project
 
-Made with ❤️
+Made with ❤️. 
 [Donate For Renew Doamin/Change Domain to Global](https://saweria.co/shngrc)
 
 ![Screenshoot](https://i.ibb.co/7gFw1wt/screenshot.png)
