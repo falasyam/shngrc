@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Video from '../views/Video.vue'
 import Photo from '../views/Photo.vue'
-import Fanbase from '../views/Fanbase.vue'
 
 Vue.use(VueRouter)
 
@@ -35,8 +34,8 @@ Vue.use(VueRouter)
   {
     path: '/fanbase',
     name: 'Fanbase',
-    component: Fanbase,
-    meta: {title: 'Gracias - Shania Gracia Fanbase'}
+    meta: { title: 'Redirect'},
+    beforeEnter() {location.href = 'https://fanbase.shaniagracia.my.id'}
   }
 ]
 
