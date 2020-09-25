@@ -53,6 +53,45 @@ export default {
     data() {
         return {
             sosmed: {
+                "21092020-3": {
+                    "imageSrc": 'https://i.ibb.co/HFxsx0K/119938356-366470078068896-538569694718758808-n.jpg'
+                },
+                "21092020-2": {
+                    "imageSrc": 'https://i.ibb.co/6XxcfWT/119896365-187716032961263-7847522011953916507-n.jpg'
+                },
+                "21092020-1": {
+                    "imageSrc": 'https://i.ibb.co/8BYVvVK/119820714-751509079031510-4052636550379613634-n.jpg'
+                },
+                "20092020-3": {
+                    "imageSrc": 'https://i.ibb.co/ZMSLzbV/20092020-2.jpg'
+                },
+                "20092020-2": {
+                    "imageSrc": 'https://i.ibb.co/XbHDqtV/20092020-1.jpg'
+                },
+                "20092020-1": {
+                    "imageSrc": 'https://i.ibb.co/P99sJnf/20092020.jpg'
+                },
+                "18092020-3": {
+                    "imageSrc": 'https://i.ibb.co/5R90tqy/698ce457-2410-4ef7-b20b-cd77dbd7b11b.jpg'
+                },
+                "18092020-2": {
+                    "imageSrc": 'https://i.ibb.co/VqrjV18/119475189-174735120862033-5722570979389226970-n.jpg'
+                },
+                "18092020-1": {
+                    "imageSrc": 'https://i.ibb.co/YcFSSdq/119720801-195156228642156-2855328862666834494-n.jpg'
+                },
+                "18092020": {
+                    "imageSrc": 'https://i.ibb.co/ZLb6kpc/119555015-169219038089878-8674425437990998916-n.jpg'
+                },
+                "16092020-1": {
+                    "imageSrc": 'https://i.ibb.co/XxLj9jk/16092020-1.jpg'
+                },
+                "16092020": {
+                    "imageSrc": 'https://i.ibb.co/X56ngnY/16092020.jpg'
+                },
+                "14092020": {
+                    "imageSrc": 'https://i.ibb.co/BGqY4D1/14092020.jpg'
+                },
                 "13092020-5": {
                     "imageSrc": 'https://i.ibb.co/CsbSQjq/13092020.jpg'
                 },
