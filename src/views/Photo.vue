@@ -53,6 +53,15 @@ export default {
     data() {
         return {
             sosmed: {
+                "26092020-3": {
+                    "imageSrc": 'https://i.ibb.co/d4qJcLb/jkt48gracia-120133510-402541580929875-2797794511229834861-n.jpg'
+                },
+                "26092020-2": {
+                    "imageSrc": 'https://i.ibb.co/gtgGRkZ/jkt48gracia-120096488-429962021335888-7346533573304722713-n.jpg'
+                },
+                "26092020-1": {
+                    "imageSrc": 'https://i.ibb.co/3s939W1/jkt48gracia-120138429-252357162747917-8748111100834361683-n.jpg'
+                },
                 "21092020-3": {
                     "imageSrc": 'https://i.ibb.co/HFxsx0K/119938356-366470078068896-538569694718758808-n.jpg'
                 },
