@@ -53,6 +53,30 @@ export default {
     data() {
         return {
             sosmed: {
+                "04102020-3": {
+                    "imageSrc": 'https://i.ibb.co/hWqjTbk/jkt48gracia-120404249-176242563998187-8365533492682278281-n.jpg'
+                },
+                "04102020-2": {
+                    "imageSrc": 'https://i.ibb.co/1vrNjgT/04102020-2.jpg'
+                },
+                "04102020-1": {
+                    "imageSrc": 'https://i.ibb.co/KxGWpnw/04102020-1.jpg'
+                },
+                "04102020": {
+                    "imageSrc": 'https://i.ibb.co/MBMCSVW/04102020.jpg'
+                },
+                "02102020-3": {
+                    "imageSrc": 'https://i.ibb.co/NWBDBg9/02102020-3.jpg'
+                },
+                "02102020-2": {
+                    "imageSrc": 'https://i.ibb.co/RC4G8hQ/02102020-2.jpg'
+                },
+                "02102020-1": {
+                    "imageSrc": 'https://i.ibb.co/sWKrc6T/02102020.jpg'
+                },
+                "02102020": {
+                    "imageSrc": 'https://i.ibb.co/whM433Q/02102020-1.jpg'
+                },
                 "26092020-3": {
                     "imageSrc": 'https://i.ibb.co/d4qJcLb/jkt48gracia-120133510-402541580929875-2797794511229834861-n.jpg'
                 },
