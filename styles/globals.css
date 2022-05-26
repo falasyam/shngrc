@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-my {
+  background-color: #fcfcfc;
+}
+
+.bg-my-op {
+  background: rgba(252, 252, 252, 0.9);
+}
+
+.bg-pc {
+  background-color: #f1daff;
+}
+
+.bg-pc:hover {
+  background-color: #f1daff;
+}
+
+.grecover {
+  background-image: url("../public/assets/GreCover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.covar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.h-setengah {
+  height: 75vh;
+}
