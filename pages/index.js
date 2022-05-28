@@ -2,9 +2,36 @@ import Head from "next/head";
 import NextLink from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import axios from "axios";
 import Container from "../components/container";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [detail, setDetail] = useState([]);
+  const [jadwal, setJadwal] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://mycorsproxy-tuto.herokuapp.com/https://www.showroom-live.com/api/room/profile?room_id=318208"
+      )
+      .then((res) => {
+        const details = res.data;
+        setDetail(details);
+      })
+      .catch((error) => console.log(error));
+
+    axios
+      .get(
+        "https://mycorsproxy-tuto.herokuapp.com/https://www.showroom-live.com/api/room/next_live?room_id=318208"
+      )
+      .then((res) => {
+        const jadwals = res.data;
+        setJadwal(jadwals);
+      })
+      .catch((error) => console.log(error));
+  });
+
   return (
     <Container>
       <Head>
@@ -32,6 +59,7 @@ export default function Home() {
                 <div className="md:px-8 text-purple-900 text-2xl md:text-5xl">
                   Hello! I&rsquo;m
                 </div>
+                <div>{detail.room_name}</div>
                 <div className="md:px-8 text-purple-800 text-left text-4xl md:text-7xl font-bold">
                   Shania Gracia
                 </div>
@@ -103,6 +131,37 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="pt-8 px-8 md:px-16">
+        <div className="bg-purple-100 rounded-lg shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="row-span-full md:row-span-3">
+              <img className="h-full w-full rounded-lg" src={detail.image} />
+            </div>
+            <div className="col-span-1 md:col-span-2 p-6">
+              <div className="md:pl-12">
+                <span className="text-xl md:text-3xl font-bold">{detail.room_name}</span>
+                <br />
+                <span className="pt-2 font-semibold text-gray-400 tracking-wide">
+                  {detail.follower_num} Followers
+                </span>
+                <br />
+                <span className="pt-2">
+                  Room Level: <span className="text-gray-400">{detail.room_level}</span>
+                </span>
+                <br />
+                <div className="pt-4"></div>
+                <button
+                  href={detail.share_url_live}
+                  className="px-2 py-3 bg-purple-700 rounded-lg text-white"
+                >
+                  Buka Showroom
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-6"></div>
       </section>
     </Container>
   );

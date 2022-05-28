@@ -46,6 +46,8 @@ export default function Container(props) {
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="#" text="About" />
+            <NavItem href="https://fanbase.shaniagracia.my.id" text="Fanbase" />
+            <NavItem href="https://play.shaniagracia.my.id" text="Game" />
           </div>
         </nav>
       </header>
@@ -54,7 +56,7 @@ export default function Container(props) {
 
       <footer className="px-8 py-4 bg-my dark:bg-gray-800">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a href="https://flowbite.com" className="flex items-center mb-4 sm:mb-0">
+          <a href="https://shaniagracia.my.id" className="flex items-center mb-4 sm:mb-0">
             <img
               src="/assets/shngrcletter.webp"
               className="mr-3 h-8"
@@ -69,17 +71,17 @@ export default function Container(props) {
             </li>
             <li>
               <a href="#" className="mr-4 hover:underline md:mr-6">
-                Privacy Policy
+                Fanbase
               </a>
             </li>
             <li>
               <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                Licensing
+                Games
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Contact
+                Attribution
               </a>
             </li>
           </ul>

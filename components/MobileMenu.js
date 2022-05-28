@@ -63,6 +63,22 @@ export default function MobileMenu() {
                 <a className="flex w-auto pb-4">About</a>
               </Link>
             </li>
+            <li
+              className="border-b border-gray-300 text-purple-700 text-sm font-semibold"
+              style={{ transitionDelay: "150ms" }}
+            >
+              <Link href="https://fanbase.shaniagracia.my.id">
+                <a className="flex w-auto pb-4">Fanbase</a>
+              </Link>
+            </li>
+            <li
+              className="border-b border-gray-300 text-purple-700 text-sm font-semibold"
+              style={{ transitionDelay: "150ms" }}
+            >
+              <Link href="https://play.shaniagracia.my.id">
+                <a className="flex w-auto pb-4">Game</a>
+              </Link>
+            </li>
 
             <div className="bottom-0 text-center py-12">
               <div className="flex flex-col justify-center justify-items-center">
