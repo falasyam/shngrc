@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(
-        "https://mycorsproxy-tuto.herokuapp.com/https://www.showroom-live.com/api/room/profile?room_id=318208"
+        "https://api.codetabs.com/v1/proxy/?quest=https://www.showroom-live.com/api/room/profile?room_id=318208"
       )
       .then((res) => {
         const details = res.data;
@@ -59,16 +59,15 @@ export default function Home() {
                 <div className="md:px-8 text-purple-900 text-2xl md:text-5xl">
                   Hello! I&rsquo;m
                 </div>
-                <div>{detail.room_name}</div>
                 <div className="md:px-8 text-purple-800 text-left text-4xl md:text-7xl font-bold">
                   Shania Gracia
                 </div>
               </div>
               <div className="justify-self-end">
                 <div className="absolute blur-2xl items-center">
-                  <Image src="assets/headers.webp" width="450" height="450" />
+                  <Image src="assets/headers.webp" width="450" height="450" alt="blur" />
                 </div>
-                <Image src="assets/headers.webp" width="450" height="450" />
+                <Image src="assets/headers.webp" width="450" height="450" alt="Header Photo" />
               </div>
             </div>
           </div>
@@ -131,19 +130,50 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="py-6"></div>
       </section>
+      <section
+        className="w-full bg-purple-700 flex flex-col mx-auto px-8 max-w-full py-8 md:py-20 bg-fixed bg-cover bg-center"
+        style={{ backgroundImage: `url("/assets/perform.webp")` }}
+      >
+        <div className="">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center items-center text-center content-center">
+            <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
+              <div className="font-bold text-xl">600+</div>
+              <div>Show</div>
+            </div>
+            <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
+              <div className="font-bold text-xl">10</div>
+              <div>Setlist</div>
+            </div>
+            <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
+              <div className="font-bold text-xl">29</div>
+              <div>Singles</div>
+            </div>
+            <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
+              <div className="font-bold text-xl">6</div>
+              <div>Album</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="py-6"></div>
       <section className="pt-8 px-8 md:px-16">
         <div className="bg-purple-100 rounded-lg shadow-xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="row-span-full md:row-span-3">
-              <img className="h-full w-full rounded-lg" src={detail.image} />
+              <img
+                className="h-full w-full rounded-lg"
+                src={detail.image}
+                alt={detail.room_name}
+              />
             </div>
             <div className="col-span-1 md:col-span-2 p-6">
               <div className="md:pl-12">
                 <span className="text-xl md:text-3xl font-bold">{detail.room_name}</span>
                 <br />
                 <span className="pt-2 font-semibold text-gray-400 tracking-wide">
-                  {detail.follower_num} Followers
+                  {detail.follower_num} Pengikut
                 </span>
                 <br />
                 <span className="pt-2">
@@ -151,12 +181,12 @@ export default function Home() {
                 </span>
                 <br />
                 <div className="pt-4"></div>
-                <button
+                <a
                   href={detail.share_url_live}
                   className="px-2 py-3 bg-purple-700 rounded-lg text-white"
                 >
                   Buka Showroom
-                </button>
+                </a>
               </div>
             </div>
           </div>
