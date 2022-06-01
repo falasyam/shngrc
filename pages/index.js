@@ -6,14 +6,14 @@ import axios from "axios";
 import Container from "../components/container";
 import { useEffect, useState } from "react";
 
-export default function Home() {
+export default function Home({ jadwals }) {
   const [detail, setDetail] = useState([]);
-  const [jadwal, setJadwal] = useState([]);
+  const [perform, setPerform] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        "https://api.codetabs.com/v1/proxy/?quest=https://www.showroom-live.com/api/room/profile?room_id=318208"
+        "https://nextjs-cors-anywhere.vercel.app/api?endpoint=https://www.showroom-live.com/api/room/profile?room_id=318208"
       )
       .then((res) => {
         const details = res.data;
@@ -22,12 +22,10 @@ export default function Home() {
       .catch((error) => console.log(error));
 
     axios
-      .get(
-        "https://mycorsproxy-tuto.herokuapp.com/https://www.showroom-live.com/api/room/next_live?room_id=318208"
-      )
+      .get("https://api.jsonbin.io/b/62976aaf05f31f68b3b20eca/latest")
       .then((res) => {
-        const jadwals = res.data;
-        setJadwal(jadwals);
+        const performs = res.data;
+        setPerform(performs);
       })
       .catch((error) => console.log(error));
   });
@@ -37,7 +35,12 @@ export default function Home() {
       <Head>
         <title>Shania Gracia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="SG" />
+        <meta
+          name="description"
+          content="Shania Gracia yang kerap dipanggil Gracia/Gre/Gege adalah member JKT48. Shania
+              Gracia lahir pada tanggal 31 Agustus 1999 dan merupakan anak pertama dari tiga
+              bersaudara."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -139,19 +142,19 @@ export default function Home() {
         <div className="">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center items-center text-center content-center">
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">600+</div>
+              <div className="font-bold text-xl">{perform.show}</div>
               <div>Show</div>
             </div>
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">10</div>
+              <div className="font-bold text-xl">{perform.setlist}</div>
               <div>Setlist</div>
             </div>
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">29</div>
+              <div className="font-bold text-xl">{perform.singles}</div>
               <div>Singles</div>
             </div>
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">6</div>
+              <div className="font-bold text-xl">{perform.album}</div>
               <div>Album</div>
             </div>
           </div>
@@ -172,12 +175,12 @@ export default function Home() {
               <div className="md:pl-12">
                 <span className="text-xl md:text-3xl font-bold">{detail.room_name}</span>
                 <br />
-                <span className="pt-2 font-semibold text-gray-400 tracking-wide">
+                <span className="pt-2 font-semibold text-gray-900 tracking-wide">
                   {detail.follower_num} Pengikut
                 </span>
                 <br />
                 <span className="pt-2">
-                  Room Level: <span className="text-gray-400">{detail.room_level}</span>
+                  Room Level: <span className="text-gray-800">{detail.room_level}</span>
                 </span>
                 <br />
                 <div className="pt-4"></div>
@@ -193,6 +196,53 @@ export default function Home() {
         </div>
         <div className="py-6"></div>
       </section>
+      <section className="px-8">
+        <div className="bg-white shadow-xl p-4 rounded-lg">
+          <div className="font-bold text-lg py-2">Schedule</div>
+          <div className="bg-my px-4 py-4 rounded-lg">
+            <div className="p-2 md:p-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {jadwals.map((jadwal) => (
+                  <div
+                    className="bg-purple-700 rounded-lg p-4 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url("https://jkt48.com/assets/theater/actual/1.jpg")`,
+                    }}
+                    key={jadwal.id}
+                  >
+                    <div className="grid grid-cols-3 text-gray-200 items-center px-5 pt-5">
+                      <div className="col-span-2 flex flex-row gap-3 font-bold text-white text-lg">
+                        {jadwal.event}
+                      </div>
+                    </div>
+                    <div className="pb-6"></div>
+                    <p className="text-white font-bold mx-4 text-base">{jadwal.setlist}</p>
+                    <p className="text-white font-semibold mx-4 text-sm md:text-md">
+                      <span className="">{jadwal.tanggal}</span>
+                      {" - "}
+                      <span className="">{jadwal.pukul}</span>
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="py-6"></div>
     </Container>
   );
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://api.jsonbin.io/b/62976a2c05f31f68b3b20e2e/latest`);
+  const jadwals = await res.json();
+
+  // Pass data to the page via props
+  return {
+    props: {
+      jadwals,
+    },
+  };
 }
