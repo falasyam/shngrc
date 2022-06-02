@@ -2,34 +2,9 @@ import Head from "next/head";
 import NextLink from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import axios from "axios";
-import Container from "../components/container";
-import { useEffect, useState } from "react";
+import Container from "../components/Container";
 
-export default function Home({ jadwals }) {
-  const [detail, setDetail] = useState([]);
-  const [perform, setPerform] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(
-        "https://nextjs-cors-anywhere.vercel.app/api?endpoint=https://www.showroom-live.com/api/room/profile?room_id=318208"
-      )
-      .then((res) => {
-        const details = res.data;
-        setDetail(details);
-      })
-      .catch((error) => console.log(error));
-
-    axios
-      .get("https://api.jsonbin.io/b/62976aaf05f31f68b3b20eca/latest")
-      .then((res) => {
-        const performs = res.data;
-        setPerform(performs);
-      })
-      .catch((error) => console.log(error));
-  });
-
+export default function Home({ jadwals, performs, showroom }) {
   return (
     <Container>
       <Head>
@@ -142,19 +117,19 @@ export default function Home({ jadwals }) {
         <div className="">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center items-center text-center content-center">
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">{perform.show}</div>
+              <div className="font-bold text-xl">{performs.show}</div>
               <div>Show</div>
             </div>
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">{perform.setlist}</div>
+              <div className="font-bold text-xl">{performs.setlist}</div>
               <div>Setlist</div>
             </div>
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">{perform.singles}</div>
+              <div className="font-bold text-xl">{performs.singles}</div>
               <div>Singles</div>
             </div>
             <div className="text-white backdrop-blur-lg rounded-full px-6 py-6">
-              <div className="font-bold text-xl">{perform.album}</div>
+              <div className="font-bold text-xl">{performs.album}</div>
               <div>Album</div>
             </div>
           </div>
@@ -167,25 +142,25 @@ export default function Home({ jadwals }) {
             <div className="row-span-full md:row-span-3">
               <img
                 className="h-full w-full rounded-lg"
-                src={detail.image}
-                alt={detail.room_name}
+                src={showroom.image}
+                alt={showroom.room_name}
               />
             </div>
             <div className="col-span-1 md:col-span-2 p-6">
               <div className="md:pl-12">
-                <span className="text-xl md:text-3xl font-bold">{detail.room_name}</span>
+                <span className="text-xl md:text-3xl font-bold">{showroom.room_name}</span>
                 <br />
                 <span className="pt-2 font-semibold text-gray-900 tracking-wide">
-                  {detail.follower_num} Pengikut
+                  {showroom.follower_num} Pengikut
                 </span>
                 <br />
                 <span className="pt-2">
-                  Room Level: <span className="text-gray-800">{detail.room_level}</span>
+                  Room Level: <span className="text-gray-800">{showroom.room_level}</span>
                 </span>
                 <br />
                 <div className="pt-4"></div>
                 <a
-                  href={detail.share_url_live}
+                  href={showroom.share_url_live}
                   className="px-2 py-3 bg-purple-700 rounded-lg text-white"
                 >
                   Buka Showroom
@@ -204,24 +179,47 @@ export default function Home({ jadwals }) {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {jadwals.map((jadwal) => (
                   <div
-                    className="bg-purple-700 rounded-lg p-4 bg-cover bg-center"
+                    className="bg-purple-700 rounded-lg p-2 md:p-4 bg-cover bg-center"
                     style={{
                       backgroundImage: `url("https://jkt48.com/assets/theater/actual/1.jpg")`,
                     }}
                     key={jadwal.id}
                   >
-                    <div className="grid grid-cols-3 text-gray-200 items-center px-5 pt-5">
-                      <div className="col-span-2 flex flex-row gap-3 font-bold text-white text-lg">
-                        {jadwal.event}
+                    <div className="">
+                      <div className="grid grid-cols-3 text-gray-200 items-center px-2 py-2 md:px-4 md:py-4">
+                        <div className="col-span-2 flex flex-row font-bold text-white text-lg">
+                          <span className="px-2 py-1 backdrop-blur-sm rounded-full bg-red-600/60 filter-none">
+                            {jadwal.event}
+                          </span>
+                        </div>
+                        <div className="flex justify-end">
+                          <a
+                            className="text-white rounded-full hover:bg-gray-700 delay-50 duration-100 p-1"
+                            href="https://jkt48.com/calendar/list?lang=id"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="rgba(255,255,255,1)"
+                              />
+                            </svg>
+                          </a>
+                        </div>
                       </div>
+                      <div className="pb-6"></div>
+                      <p className="text-white font-bold mx-5 text-base">{jadwal.setlist}</p>
+                      <p className="text-white font-semibold mx-5 text-sm md:text-md">
+                        <span className="">{jadwal.tanggal}</span>
+                        {" - "}
+                        <span className="">{jadwal.pukul}</span>
+                      </p>
                     </div>
-                    <div className="pb-6"></div>
-                    <p className="text-white font-bold mx-4 text-base">{jadwal.setlist}</p>
-                    <p className="text-white font-semibold mx-4 text-sm md:text-md">
-                      <span className="">{jadwal.tanggal}</span>
-                      {" - "}
-                      <span className="">{jadwal.pukul}</span>
-                    </p>
                   </div>
                 ))}
               </div>
@@ -236,13 +234,27 @@ export default function Home({ jadwals }) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://api.jsonbin.io/b/62976a2c05f31f68b3b20e2e/latest`);
+
+  //Jadwal JSON
+  const res = await fetch(`http://shngrc.github.io/data/schedule.json`);
   const jadwals = await res.json();
+
+  // Perform JSON
+  const per = await fetch(`http://shngrc.github.io/data/perform.json`);
+  const performs = await per.json();
+
+  //Showroom API
+  const show = await fetch(
+    `https://nextjs-cors-anywhere.vercel.app/api?endpoint=https://www.showroom-live.com/api/room/profile?room_id=318208`
+  );
+  const showroom = await show.json();
 
   // Pass data to the page via props
   return {
     props: {
       jadwals,
+      performs,
+      showroom,
     },
   };
 }
