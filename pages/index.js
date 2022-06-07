@@ -195,7 +195,7 @@ export default function Home({ jadwals, performs, showroom }) {
                         <div className="flex justify-end">
                           <a
                             className="text-white rounded-full hover:bg-gray-700 delay-50 duration-100 p-1"
-                            href="https://jkt48.com/calendar/list?lang=id"
+                            href={jadwal.link}
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"

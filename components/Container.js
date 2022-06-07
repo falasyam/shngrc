@@ -45,7 +45,7 @@ export default function Container(props) {
           <div className="ml-[-0.60rem]">
             <MobileMenu />
             <NavItem href="/" text="Home" />
-            <NavItem href="#" text="About" />
+            <NavItem href="/about" text="About" />
             <NavItem href="https://fanbase.shaniagracia.my.id" text="Fanbase" />
             <NavItem href="https://play.shaniagracia.my.id" text="Game" />
           </div>

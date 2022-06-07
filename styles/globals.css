@@ -34,3 +34,9 @@
 .h-setengah {
   height: 75vh;
 }
+
+@media (min-width: 992px) {
+  #cta-img-nml-50 {
+    margin-left: 50px;
+  }
+}
