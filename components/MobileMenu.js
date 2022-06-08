@@ -67,7 +67,7 @@ export default function MobileMenu() {
               className="border-b border-gray-300 text-purple-700 text-sm font-semibold"
               style={{ transitionDelay: "150ms" }}
             >
-              <Link href="https://fanbase.shaniagracia.my.id">
+              <Link href="/about/fanbase">
                 <a className="flex w-auto pb-4">Fanbase</a>
               </Link>
             </li>

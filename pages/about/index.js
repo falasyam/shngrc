@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Container from "../../components/Container";
+import Tabs from "../../components/TabsTimeline";
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
       </Head>
       <section className="">
         <div className="px-8 flex flex-col justify-end py-8 md:py-16">
-          <span className="md:px-8 font-bold text-left text-2xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 tracking-wide">
+          <span className="md:px-8 font-bold text-left text-2xl md:text-6xl text-purple-700 tracking-wide">
             “Senyumku terekam jelas dalam ingatanmu seperti foto dengan sejuta warna. Namaku
             Gracia. Always Smile.”
           </span>
@@ -29,7 +30,7 @@ export default function About() {
         <div className="container px-6 mx-auto">
           <div className="">
             <div className="flex flex-wrap">
-              <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-8 lg:mb-0">
+              <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-4 lg:mb-0">
                 <div className="flex lg:py-12">
                   <img
                     src="/assets/Gree.webp"
@@ -91,13 +92,13 @@ export default function About() {
       <div className="py-6"></div>
       <section className="px-8">
         <div className="flex flex-row justify-center">
-          <span className="font-bold border-b-4 border-purple-700">Video Profile</span>
+          <span className="font-bold border-b-2 border-purple-700">Video Profile</span>
         </div>
         <div className="pb-4"></div>
         <div className="flex flex-row justify-center">
           <iframe
-            width="560"
-            height="315"
+            width="720"
+            height="360"
             src="https://www.youtube.com/embed/AYFure5ZZA4"
             title="YouTube video player"
             frameBorder="0"
@@ -109,19 +110,33 @@ export default function About() {
       <div className="py-4"></div>
       <section className="px-8">
         <div className="flex flex-row justify-center">
-          <span className="font-bold border-b-4 border-purple-700">Twitter Timeline</span>
+          <span className="font-bold border-b-2 border-purple-700">Timeline</span>
         </div>
         <div className="pb-4"></div>
-        <div className="flex flex-col justify-center">
+        <div className="flex justify-center">
+          <Tabs />
+        </div>
+      </section>
+      <div className="py-4"></div>
+      <section className="px-8">
+        <div className="flex flex-row justify-center">
+          <span className="font-bold border-b-2 border-purple-700">Twitter Timeline</span>
+        </div>
+        <div className="pb-4"></div>
+        <div className="flex justify-center  text-center">
           <a
-            className="twitter-timeline text-center"
+            className="twitter-timeline"
             href="https://twitter.com/S_GraciaJKT48?ref_src=twsrc%5Etfw"
+            data-width="600"
             data-height="600"
+            data-chrome="noheader nofooter noborders transparent"
           >
             Tweets by S_GraciaJKT48
           </a>
+          <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
         </div>
       </section>
+      <div className="py-4"></div>
     </Container>
   );
 }

@@ -46,7 +46,7 @@ export default function Container(props) {
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/about" text="About" />
-            <NavItem href="https://fanbase.shaniagracia.my.id" text="Fanbase" />
+            <NavItem href="/about/fanbase" text="Fanbase" />
             <NavItem href="https://play.shaniagracia.my.id" text="Game" />
           </div>
         </nav>
@@ -65,14 +65,14 @@ export default function Container(props) {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                About
-              </a>
+              <NextLink href="/about">
+                <a className="mr-4 hover:underline md:mr-6 ">About</a>
+              </NextLink>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
-                Fanbase
-              </a>
+              <NextLink href="/about/fanbase">
+                <a className="mr-4 hover:underline md:mr-6 ">Fanbase</a>
+              </NextLink>
             </li>
             <li>
               <a href="#" className="mr-4 hover:underline md:mr-6 ">

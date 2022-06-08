@@ -92,12 +92,11 @@ export default function Home({ jadwals, performs, showroom }) {
               Januari 2015, Gracia dipromosikan ke Tim T bersama Generasi 3 lainnya.
             </div>
             <div className="pt-8 inline-flex">
-              <a
-                href="/about"
-                className="px-5 py-2 bg-purple-700 hover:bg-purple-500 text-white text-sm font-bold tracking-wide rounded-full focus:outline-none"
-              >
-                Gracia Profile
-              </a>
+              <NextLink href="/about">
+                <a className="px-5 py-2 bg-purple-700 hover:bg-purple-500 text-white text-sm font-bold tracking-wide rounded-full focus:outline-none">
+                  Gracia Profile
+                </a>
+              </NextLink>
               <div className="px-1"></div>
               <a
                 href="https://jkt48.com/member/detail/id/113?lang=id"

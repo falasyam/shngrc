@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7e22ce #d8b4fe;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #d8b4fe;
+}
+::-webkit-scrollbar-thumb {
+  background: #7e22ce;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9333ea;
+}
+
 .bg-my {
   background-color: #fcfcfc;
 }
