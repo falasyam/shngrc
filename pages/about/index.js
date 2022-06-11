@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Script from "next/script";
 import Container from "../../components/Container";
 import Tabs from "../../components/TabsTimeline";
 
@@ -65,7 +65,7 @@ export default function About() {
                       </a>
                       <a
                         href="https://twitter.com/s_graciajkt48"
-                        className="flex items-center hover:bg-purple-800 mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-10"
+                        className="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-10"
                       >
                         <TwitterIcon /> <span className="pr-2"> Twitter</span>
                       </a>
@@ -76,7 +76,7 @@ export default function About() {
                         <TiktokIcon /> <span className="pr-2"> Tiktok</span>
                       </a>
                       <a
-                        href="https://tiktok.com/@graciajkt48"
+                        href="https://youtube.com/GreShanTV"
                         className="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-10"
                       >
                         <YTIcon /> <span className="pr-2"> YouTube</span>
@@ -119,24 +119,62 @@ export default function About() {
       </section>
       <div className="py-4"></div>
       <section className="px-8">
-        <div className="flex flex-row justify-center">
-          <span className="font-bold border-b-2 border-purple-700">Twitter Timeline</span>
-        </div>
-        <div className="pb-4"></div>
-        <div className="flex justify-center  text-center">
-          <a
-            className="twitter-timeline"
-            href="https://twitter.com/S_GraciaJKT48?ref_src=twsrc%5Etfw"
-            data-width="600"
-            data-height="600"
-            data-chrome="noheader nofooter noborders transparent"
-          >
-            Tweets by S_GraciaJKT48
-          </a>
-          <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <div className="flex flex-row justify-center">
+              <span className="font-bold border-b-2 border-purple-700">Twitter Timeline</span>
+            </div>
+            <div className="pb-4"></div>
+            <div className="flex justify-center text-center">
+              <a
+                className="twitter-timeline"
+                href="https://twitter.com/S_GraciaJKT48?ref_src=twsrc%5Etfw"
+                data-width="600"
+                data-height="500"
+                data-chrome="noheader nofooter noborders transparent"
+              >
+                Tweets by Shania Gracia
+              </a>
+              <Script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charSet="utf-8"
+                strategy="lazyOnload"
+              ></Script>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-row justify-center">
+              <span className="font-bold border-b-2 border-purple-700">Tiktok</span>
+            </div>
+            <div className="pb-4"></div>
+            <div className="flex justify-center">
+              <blockquote
+                className="tiktok-embed"
+                cite="https://www.tiktok.com/@graciajkt48"
+                data-unique-id="graciajkt48"
+                data-embed-type="creator"
+                style={{ maxWidth: "720px", minWidth: "288px" }}
+              >
+                {" "}
+                <section>
+                  {" "}
+                  <a target="" href="https://www.tiktok.com/@graciajkt48?refer=creator_embed">
+                    @graciajkt48
+                  </a>{" "}
+                </section>{" "}
+              </blockquote>{" "}
+              <Script
+                async
+                src="https://www.tiktok.com/embed.js"
+                strategy="lazyOnload"
+              ></Script>
+            </div>
+          </div>
         </div>
       </section>
       <div className="py-4"></div>
+      <section className="px-8"></section>
     </Container>
   );
 }

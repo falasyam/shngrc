@@ -18,7 +18,7 @@ const Tabs = () => {
                   setOpenTab(1);
                 }}
                 data-toggle="tab"
-                href="#link1"
+                href="#2014"
                 role="tablist"
               >
                 2014
@@ -35,7 +35,7 @@ const Tabs = () => {
                   setOpenTab(2);
                 }}
                 data-toggle="tab"
-                href="#link2"
+                href="#2015"
                 role="tablist"
               >
                 2015
@@ -52,7 +52,7 @@ const Tabs = () => {
                   setOpenTab(3);
                 }}
                 data-toggle="tab"
-                href="#link3"
+                href="#2016"
                 role="tablist"
               >
                 2016
@@ -69,7 +69,7 @@ const Tabs = () => {
                   setOpenTab(4);
                 }}
                 data-toggle="tab"
-                href="#link4"
+                href="#2017"
                 role="tablist"
               >
                 2017
@@ -86,7 +86,7 @@ const Tabs = () => {
                   setOpenTab(5);
                 }}
                 data-toggle="tab"
-                href="#link5"
+                href="#2018"
                 role="tablist"
               >
                 2018
@@ -103,7 +103,7 @@ const Tabs = () => {
                   setOpenTab(6);
                 }}
                 data-toggle="tab"
-                href="#link6"
+                href="#2019"
                 role="tablist"
               >
                 2019
@@ -120,7 +120,7 @@ const Tabs = () => {
                   setOpenTab(7);
                 }}
                 data-toggle="tab"
-                href="#link7"
+                href="#2020"
                 role="tablist"
               >
                 2020
@@ -137,7 +137,7 @@ const Tabs = () => {
                   setOpenTab(8);
                 }}
                 data-toggle="tab"
-                href="#link8"
+                href="#2021"
                 role="tablist"
               >
                 2021
@@ -154,17 +154,17 @@ const Tabs = () => {
                   setOpenTab(9);
                 }}
                 data-toggle="tab"
-                href="#link9"
+                href="#2022"
                 role="tablist"
               >
                 2022
               </a>
             </li>
           </ul>
-          <div className="flex flex-col min-w-0 break-words bg-gray-100 w-full mb-6 drop-shadow-xl shadow-purple-500/70 rounded">
+          <div className="flex flex-col min-w-0 break-words bg-gray-100 w-full mb-6 shadow-xl shadow-purple-500/30 rounded">
             <div className="px-4 py-4 flex-auto">
               <div className="tab-content tab-space">
-                <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                <div className={openTab === 1 ? "block" : "hidden"} id="2014">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">15 Maret</h2>
@@ -186,7 +186,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                <div className={openTab === 2 ? "block" : "hidden"} id="2015">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">24 Januari</h2>
@@ -205,7 +205,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                <div className={openTab === 3 ? "block" : "hidden"} id="2016">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">27 Februari</h2>
@@ -224,7 +224,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 4 ? "block" : "hidden"} id="link4">
+                <div className={openTab === 4 ? "block" : "hidden"} id="2017">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">22 April</h2>
@@ -235,7 +235,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 5 ? "block" : "hidden"} id="link5">
+                <div className={openTab === 5 ? "block" : "hidden"} id="2018">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">17 November</h2>
@@ -246,7 +246,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 6 ? "block" : "hidden"} id="link6">
+                <div className={openTab === 6 ? "block" : "hidden"} id="2019">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">30 November</h2>
@@ -257,7 +257,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 7 ? "block" : "hidden"} id="link7">
+                <div className={openTab === 7 ? "block" : "hidden"} id="2020">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">6 Juni</h2>
@@ -268,7 +268,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 8 ? "block" : "hidden"} id="link8">
+                <div className={openTab === 8 ? "block" : "hidden"} id="2021">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">13 Maret</h2>
@@ -279,7 +279,7 @@ const Tabs = () => {
                     </div>
                   </div>
                 </div>
-                <div className={openTab === 9 ? "block" : "hidden"} id="link9">
+                <div className={openTab === 9 ? "block" : "hidden"} id="2022">
                   <div>
                     <div className="pb-4">
                       <h2 className="px-4 font-bold text-lg md:text-xl">10 April</h2>
