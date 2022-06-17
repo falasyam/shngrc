@@ -6,16 +6,20 @@ const nextConfig = {
 };
 
 module.exports = {
-  distDir: "build",
   reactStrictMode: true,
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
-    return {
-      "/": { page: "/" },
-    };
+  async redirects() {
+    return [
+      {
+        source: '/photo',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/video',
+        destination: '/',
+        permanent: true,
+      },
+    ]
   },
 };
 

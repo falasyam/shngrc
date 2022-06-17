@@ -75,13 +75,19 @@ export default function Container(props) {
               </NextLink>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              <a
+                href="https://play.shaniagracia.my.id"
+                className="mr-4 hover:underline md:mr-6 "
+              >
                 Games
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Attribution
+              <a
+                href="https://drive.google.com/drive/folders/1Fap8T4DlFTMvzb_VwEpw1k4jMylUbmkB"
+                className="hover:underline"
+              >
+                Archive
               </a>
             </li>
           </ul>
@@ -99,13 +105,22 @@ export default function Container(props) {
             </a>
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="#" className="text-purple-900 hover:text-purple-700">
+            <a
+              href="https://instagram.com/forshngrc"
+              className="text-purple-900 hover:text-purple-700"
+            >
               <InstaIcon />
             </a>
-            <a href="#" className="text-purple-900 hover:text-purple-700">
+            <a
+              href="https://twitter.com/GraciasFans_INA"
+              className="text-purple-900 hover:text-purple-700"
+            >
               <TwitterIcon />
             </a>
-            <a href="#" className="text-purple-900 hover:text-purple-700">
+            <a
+              href="https://github.com/forshngrc"
+              className="text-purple-900 hover:text-purple-700"
+            >
               <GitIcon />
             </a>
           </div>

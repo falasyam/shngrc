@@ -1,10 +1,18 @@
 import Container from "../../components/Container";
 import Head from "next/head";
-import Image from "next/image";
+
+import { useEffect } from "react";
 
 import Script from "next/script";
 
-export default function fanbase() {
+export default function Fanbase() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <Container>
       <Head>
@@ -90,20 +98,14 @@ export default function fanbase() {
       <section className="px-8">
         <div className="flex justify-center text-center">
           <a
-            className="twitter-timeline"
+            className="twitter-timeline font-bold"
             href="https://twitter.com/GraciasFans_INA?ref_src=twsrc%5Etfw"
             data-width="600"
             data-height="500"
             data-chrome="noheader nofooter noborders transparent"
           >
-            Tweets by GraciasFans_INA
+            Tweets by GraciasFans_INA, reload if Tweet not show.
           </a>
-          <Script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charSet="utf-8"
-            strategy="lazyOnload"
-          ></Script>
         </div>
       </section>
       <div className="py-4"></div>

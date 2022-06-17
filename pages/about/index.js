@@ -1,9 +1,17 @@
 import Head from "next/head";
 import Script from "next/script";
+import { useEffect } from "react";
 import Container from "../../components/Container";
 import Tabs from "../../components/TabsTimeline";
 
 export default function About() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <Container>
       <Head>
@@ -127,20 +135,14 @@ export default function About() {
             <div className="pb-4"></div>
             <div className="flex justify-center text-center">
               <a
-                className="twitter-timeline"
+                className="twitter-timeline font-bold"
                 href="https://twitter.com/S_GraciaJKT48?ref_src=twsrc%5Etfw"
                 data-width="600"
                 data-height="500"
                 data-chrome="noheader nofooter noborders transparent"
               >
-                Tweets by Shania Gracia
+                Tweets by Shania Gracia, reload if Tweet not show.
               </a>
-              <Script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charSet="utf-8"
-                strategy="lazyOnload"
-              ></Script>
             </div>
           </div>
           <div>
@@ -159,16 +161,16 @@ export default function About() {
                 {" "}
                 <section>
                   {" "}
-                  <a target="" href="https://www.tiktok.com/@graciajkt48?refer=creator_embed">
-                    @graciajkt48
+                  <a
+                    target=""
+                    className="text-center font-bold"
+                    href="https://www.tiktok.com/@graciajkt48?refer=creator_embed"
+                  >
+                    Tiktok from @graciajkt48, reload if not show.
                   </a>{" "}
                 </section>{" "}
               </blockquote>{" "}
-              <Script
-                async
-                src="https://www.tiktok.com/embed.js"
-                strategy="lazyOnload"
-              ></Script>
+              <Script src="https://www.tiktok.com/embed.js" strategy="lazyOnload"></Script>
             </div>
           </div>
         </div>
