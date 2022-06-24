@@ -24,6 +24,7 @@ export default function Fanbase() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="py-16"></div>
       <section>
         <div className="px-8">
           <div className="flex justify-between bg-red-700 text-white rounded px-4 py-4">

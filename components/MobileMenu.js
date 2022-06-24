@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(isMenuOpen, {
-    enterDelay: 20,
+    enterDelay: 50,
     exitDelay: 150,
   });
 
@@ -15,9 +15,12 @@ export default function MobileMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
       document.body.style.overflow = "";
+      document.getElementById("navbar").style.backgroundColor = "";
+      document.getElementById("navbar").style.transition = "300ms linear";
     } else {
       setIsMenuOpen(true);
       document.body.style.overflow = "hidden";
+      document.getElementById("navbar").style.backgroundColor = "#fcfcfc";
     }
   }
 
@@ -39,11 +42,11 @@ export default function MobileMenu() {
         <XIcon data-hide={!isMenuOpen} />
       </button>
       {isMenuMounted && (
-        <div className="flex flex-col max-h-screen max-w-screen">
+        <div className="flex z-50 inset-0 max-h-screen max-w-screen">
           <ul
             className={cn(
               styles.menu,
-              "flex flex-col absolute backdrop-blur-lg bg-my-op",
+              "flex flex-col backdrop-blur-xl bg-my absolute",
               isMenuRendered && styles.menuRendered
             )}
           >
@@ -120,9 +123,9 @@ function MenuIcon(props) {
   return (
     <svg
       className="h-5 w-5 text-purple-700"
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       {...props}
     >

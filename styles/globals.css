@@ -9,16 +9,18 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #d8b4fe;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: #7e22ce;
+  border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #9333ea;
+  border-radius: 999px;
 }
 
 .bg-my {
@@ -26,7 +28,7 @@
 }
 
 .bg-my-op {
-  background: rgba(252, 252, 252, 0.9);
+  background: rgba(252, 252, 252, 0.75);
 }
 
 .bg-pc {

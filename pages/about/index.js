@@ -25,15 +25,19 @@ export default function About() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="py-8 md:py-3"></div>
       <section className="">
-        <div className="px-8 flex flex-col justify-end py-8 md:py-16">
-          <span className="md:px-8 font-bold text-left text-2xl md:text-6xl text-purple-700 tracking-wide">
+        <div className="flex flex-col justify-center py-8 md:py-16">
+          <video autoPlay loop muted className="bg-no-repeat w-screen bg-center bg-cover">
+            <source src="/assets/SGMVFH.mp4" type="video/mp4"></source>
+          </video>
+          <span className="absolute mix-blend-color-burn px-8 font-bold text-left text-base md:text-6xl text-purple-700 tracking-wide">
             “Senyumku terekam jelas dalam ingatanmu seperti foto dengan sejuta warna. Namaku
             Gracia. Always Smile.”
           </span>
         </div>
       </section>
-      <div className="py-6"></div>
+      <div className="py-2"></div>
       <section>
         <div className="container px-6 mx-auto">
           <div className="">

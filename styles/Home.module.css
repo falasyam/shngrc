@@ -39,6 +39,7 @@
 }
 
 .menu li {
+  padding-right: 24px;
   padding-left: 24px;
   transform: translateX(-16px);
   opacity: 0;
@@ -53,7 +54,7 @@
 }
 
 .menuRendered li {
-  @apply border-gray-200 w-full;
+  @apply border-purple-200 w-full;
   transform: translateX(0);
   opacity: 1;
 }

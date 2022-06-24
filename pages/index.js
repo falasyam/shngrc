@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Container from "../components/Container";
+import { multiply } from "lodash";
 
 export default function Home({ jadwals, performs, showroom }) {
   return (
@@ -29,6 +30,7 @@ export default function Home({ jadwals, performs, showroom }) {
         </div>
   </section>*/}
 
+      <div className="py-12"></div>
       <section>
         <div className="container">
           <div className="flex flex-col-reverse mx-auto px-8 w-full py-8">
@@ -178,16 +180,17 @@ export default function Home({ jadwals, performs, showroom }) {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {jadwals.map((jadwal) => (
                   <div
-                    className="bg-purple-700 rounded-lg p-2 md:p-4 bg-cover bg-center"
+                    className="bg-gray-400 rounded-lg p-2 md:p-4 bg-cover bg-center"
                     style={{
                       backgroundImage: `url("https://jkt48.com/assets/theater/actual/1.jpg")`,
+                      backgroundBlendMode: "multiply",
                     }}
                     key={jadwal.id}
                   >
                     <div className="">
                       <div className="grid grid-cols-3 text-gray-200 items-center px-2 py-2 md:px-4 md:py-4">
-                        <div className="col-span-2 flex flex-row font-bold text-white text-lg">
-                          <span className="px-2 py-1 backdrop-blur-sm rounded-full bg-red-600/60 filter-none">
+                        <div className="col-span-2 flex flex-row font-bold text-white">
+                          <span className="px-3 py-2 backdrop-blur-sm rounded-full bg-red-600/60 filter-none">
                             {jadwal.event}
                           </span>
                         </div>

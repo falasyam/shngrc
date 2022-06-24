@@ -39,9 +39,14 @@ export default function Container(props) {
         <meta name="robots" content="follow, index" />
       </Head>
 
-      <header className="bg-my flex flex-col justify-center">
-        <nav className="flex items-center justify-between w-full relative px-8 border-gray-200 mx-auto pt-8 pb-8 text-gray-900 bg-opacity-60">
-          <div className="font-bold text-purple-700">SHNGRC</div>
+      <header className="fixed top-0 w-full z-20 flex flex-col justify-center">
+        <nav
+          id="navbar"
+          className="backdrop-blur-xl bg-my-op flex items-center justify-between w-full px-8 border-b border-purple-300 mx-auto pt-6 pb-6 text-gray-900 bg-opacity-40"
+        >
+          <div id="namesite" className="font-bold text-purple-700">
+            SHNGRC
+          </div>
           <div className="ml-[-0.60rem]">
             <MobileMenu />
             <NavItem href="/" text="Home" />
@@ -51,7 +56,6 @@ export default function Container(props) {
           </div>
         </nav>
       </header>
-
       <main className="justify-center">{children}</main>
 
       <footer className="px-8 py-4 bg-my dark:bg-gray-800">
